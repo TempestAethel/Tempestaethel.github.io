@@ -7,7 +7,7 @@
 
 ## Digital Habits
 - **Primary Communication Tool**: WhatsApp thought its a private number that prefer not to share.
-- I'm always learning and exploring new things online, often using resources like this to expand my knowledge and do things that make me happy.
+- I'm always learning and exploring new things online, often using resources like this to expand my knowledge and do things that makes me happy.
 
 ## Looking Forward
 - I'm excited to see what the future holds for technology and my own coding journey.
