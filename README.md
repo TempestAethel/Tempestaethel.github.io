@@ -9,7 +9,8 @@
 - I'm constantly learning and exploring new things online, using various resources to expand my knowledge and pursue what makes me happy.
 
 ## Online Presence
-- Check out my work at [Tempest Aethel](https://tempestaethel.github.io/TempestAethel/), where you can find links to all my personal websites and GitHub pages.
+- Check out my work at [Tempest Aethel](https://tempestaethel.github.io/TempestAethel/), where you can find links to all my personal websites and GitHub pages.All my Games and Repositories are there.
+  
 
 ## Looking Forward
 - I'm excited to see what the future holds for technology and my own coding journey!
