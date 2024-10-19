@@ -16,6 +16,9 @@ You can check out my anime interests on my [Anime-Planet](https://www.anime-plan
 
 Together, "TempestAethel" can be interpreted as "noble storm," suggesting a powerful and tumultuous character with qualities of honor.
 
+## Main GitHub Page
+You can find links to all my projects on my main GitHub page: [TempestAethel](https://tempestaethel.github.io/TempestAethel/).
+
 ## My Projects
 
 ### Game Development
@@ -34,9 +37,6 @@ Together, "TempestAethel" can be interpreted as "noble storm," suggesting a powe
 
 ## First Repository
 My first repository, [Skolar](https://github.com/TempestAethel/SKOLAR), was created for my internship-related assignments. It may not be the best, but it's a starting point!
-
-## Main GitHub Page
-You can find links to all my projects on my main GitHub page: [TempestAethel](https://tempestaethel.github.io/TempestAethel/).
 
 ### Updates
 I will be trying to update my profile with repositories over time, so feel free to check back!
