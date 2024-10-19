@@ -41,7 +41,7 @@ You can find links to all my projects on my main GitHub page: [TempestAethel](ht
 ### Updates
 I will be trying to update my profile with repositories over time, so feel free to check back!
 
-For more in-depth information about my projects, check out my [Brief.md](Brief.md).
+For more in-depth information about my projects, check out my [DeepDive.md](DeepDive.md).
 
 ---
 
