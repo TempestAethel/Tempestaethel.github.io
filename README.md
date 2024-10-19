@@ -1,16 +1,49 @@
-## Location
-- **Bengaluru, Karnataka, India**
+# My GitHub
 
-## Interests
-- I'm a passionate coder, always eager to explore new languages and technologies. Though I feel like a beginner, I truly enjoy coding and love the challenges it brings.
+Welcome to my GitHub profile! I'm a coder based in Bengaluru, Karnataka, India, with a passion for manga, anime, music, and movies. Here, you'll find a collection of my projects, including games and various web experiments.
 
-## Digital Habits
-- **Primary Communication Tool**: WhatsApp (I prefer to keep my number private).
-- I'm constantly learning and exploring new things online, using various resources to expand my knowledge and pursue what makes me happy.
+## About Me
+I enjoy coding and have experience in languages such as C, C++, and Python. Currently, I primarily work with HTML, CSS, and Java. 
 
-## Online Presence
-- Check out my work at [Tempest Aethel](https://tempestaethel.github.io/TempestAethel/), where you can find links to all my personal websites and GitHub pages.All my Games and Repositories are there.
-  
+### Anime Interests
 
-## Looking Forward
-- I'm excited to see what the future holds for technology and my own coding journey!
+You can check out my anime interests on my [Anime-Planet](https://www.anime-planet.com/users/TempestAethel) account. My manga section is not updated, but I read them too.
+---
+### Meaning Behind My Name
+- **Tempest**: Refers to a violent storm, symbolizing chaos or upheaval.
+- **Aethel**: An Old English word meaning "noble" or "honorable."
+
+Together, "TempestAethel" can be interpreted as "noble storm," suggesting a powerful and tumultuous character with qualities of honor.
+
+## My Projects
+
+### Game Development
+- **[Progress Knight](https://github.com/TempestAethel/Progress-knight)**: A game I enjoyed modding with cheats. Play it [here](https://tempestaethel.github.io/Progress-knight/).
+- **[Unbeatable Tic Tac Toe](https://github.com/TempestAethel/TicTacToe)**: A classic game with a twist. Play it [here](https://tempestaethel.github.io/TicTacToe/).
+- **[Minesweeper](https://github.com/TempestAethel/Minesweeper)**: A puzzle game of logic and strategy. Play it [here](https://tempestaethel.github.io/Minesweeper/).
+- **[Othello](https://github.com/TempestAethel/Othello)**: The classic strategy board game. Play it [here](https://tempestaethel.github.io/Othello/).
+- **[Snake Game](https://github.com/TempestAethel/Snakes)**: A fun take on the classic snake game. Play it [here](https://tempestaethel.github.io/Snakes/).
+- **[Clash 2024](https://github.com/TempestAethel/Clash-2024)**: A tile merging game. Play it [here](https://tempestaethel.github.io/Clash-2024/).
+- **[Yoyo Dash](https://github.com/TempestAethel/Yoyo-Dash)**: An interactive bouncing ball game. Play it [here](https://tempestaethel.github.io/Yoyo-Dash/).
+
+### Miscellaneous Projects
+- **[Web of Wonder](https://github.com/TempestAethel/Webs-of-Wonder)**: A collection of fun web experiments. Explore it [here](https://tempestaethel.github.io/Webs-of-Wonder/).
+- **[Embrace Yourself](https://github.com/TempestAethel/Embrace-yourself)**: A book-like project featuring quotes and poetry. Check it out [here](https://tempestaethel.github.io/Embrace-yourself/).
+- **[ZenVibes](https://github.com/TempestAethel/ZenVibes/tree/main)**: A series of calming projects. Experience it [here](https://tempestaethel.github.io/ZenVibes/).
+
+## First Repository
+My first repository, [Skolar](https://github.com/TempestAethel/SKOLAR), was created for my internship-related assignments. It may not be the best, but it's a starting point!
+
+## Main GitHub Page
+You can find links to all my projects on my main GitHub page: [TempestAethel](https://tempestaethel.github.io/TempestAethel/).
+
+### Updates
+I will be trying to update my profile with repositories over time, so feel free to check back!
+
+For more in-depth information about my projects, check out my [Brief.md](Brief.md).
+
+---
+
+
+## Note
+*I occasionally draw inspiration from various sources online to enhance my projects. I'm always ready to remove any content that may seem like I copied code, although I assure you I never did.*
