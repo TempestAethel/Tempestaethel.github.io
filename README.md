@@ -8,7 +8,8 @@ I enjoy coding and have experience in languages such as C, C++, and Python. Curr
 ### Anime Interests
 
 You can check out my anime interests on my [Anime-Planet](https://www.anime-planet.com/users/TempestAethel) account. My manga section is not updated, but I read them too.
----
+
+
 ### Meaning Behind My Name
 - **Tempest**: Refers to a violent storm, symbolizing chaos or upheaval.
 - **Aethel**: An Old English word meaning "noble" or "honorable."
