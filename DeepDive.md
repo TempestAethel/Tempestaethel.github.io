@@ -1,4 +1,4 @@
-# Deep Dive into TempestAethel's Projects
+# Deep Dive into My Projects
 
 Welcome to the detailed overview of my GitHub projects! This document provides comprehensive descriptions, features, and links for each of my projects, organized for easy navigation.
 
