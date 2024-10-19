@@ -36,7 +36,7 @@ You can find links to all my projects on my main GitHub page: [TempestAethel](ht
 - **[ZenVibes](https://github.com/TempestAethel/ZenVibes/tree/main)**: A series of calming projects. Experience it [here](https://tempestaethel.github.io/ZenVibes/).
 
 ## First Repository
-My first repository, [Skolar](https://github.com/TempestAethel/SKOLAR), was created for my internship-related assignments. It may not be the best, but it's a starting point!
+My first repository, [Skolar](https://github.com/TempestAethel/SKOLAR), was created for my internship-related assignments. It wasn't something i liked alot But It was the starting point of my Profile though!
 
 ### Updates
 I will be trying to update my profile with repositories over time, so feel free to check back!
