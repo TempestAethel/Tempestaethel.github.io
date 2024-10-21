@@ -47,5 +47,5 @@ Updates will be done at [this link](https://tempestaethel.github.io/TempestAethe
 ---
 
 
-## Note
+## Note:
 *I occasionally draw inspiration from various sources online to enhance my projects. I'm always ready to remove any content that may seem like I copied code, although I assure you I never did.*
