@@ -38,7 +38,7 @@ You can find links to all my projects on my main GitHub page: [TempestAethel](ht
 ## First Repository
 My first repository, [Skolar](https://github.com/TempestAethel/SKOLAR), was created for my internship-related assignments. It wasn't something i liked alot But It was the starting point of my Profile though!
 
-### Updates
+
 ### Updates
 I will be trying to update my profile with repositories over time, so feel free to check back! For more in-depth information about my projects, check out my [DeepDive.md](DeepDive.md).
 
