@@ -40,7 +40,7 @@ My first repository, [Skolar](https://github.com/TempestAethel/SKOLAR), was crea
 
 
 ### Updates
-I will be trying to update my profile with repositories over time, so feel free to check back! For more in-depth information about my projects, check out my [DeepDive.md](DeepDive.md).
+I'll be updating my profile with repositories over time, so feel free to check back regularly! For detailed information about my projects, please visit each repository individually.
 
 Updates will be done at [this link](https://tempestaethel.github.io/TempestAethel/info.html) since it's more convenient to manage everything in one place.
 
