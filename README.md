@@ -3,12 +3,10 @@
 Welcome to my GitHub profile! I'm a coder based in Bengaluru, Karnataka, India, with a passion for manga, anime, music, and movies. Here, you'll find a collection of my projects, including games and various web experiments.
 
 ## About Me
-I enjoy coding and have experience in languages such as C, C++, and Python. Currently, I primarily work with HTML, CSS, and Java. 
+I enjoy coding and have experience in languages such as C, C++, and Python. Currently, I primarily work with HTML, CSS, and Java. Most of my projects are built with basic HTML coding that I've learned along the way, often utilizing online resources and tools like ChatGPT. I want to be clear: I don’t intend to present myself as a great coder; my work is mainly basic, and anyone interested is welcome to use and improve upon it. Coding has been a passion of mine, and I've invested a lot of time into these projects.
 
 ### Anime Interests
-
 You can check out my anime interests on my [Anime-Planet](https://www.anime-planet.com/users/TempestAethel) account. My manga section is not updated, but I read them too.
-
 
 ### Meaning Behind My Name
 - **Tempest**: Refers to a violent storm, symbolizing chaos or upheaval.
@@ -36,8 +34,7 @@ You can find links to all my projects on my main GitHub page: [TempestAethel](ht
 - **[ZenVibes](https://github.com/TempestAethel/ZenVibes/tree/main)**: A series of calming projects. Experience it [here](https://tempestaethel.github.io/ZenVibes/).
 
 ## First Repository
-My first repository, [Skolar](https://github.com/TempestAethel/SKOLAR), was created for my internship-related assignments. It wasn't something i liked alot But It was the starting point of my Profile though!
-
+My first repository, [Skolar](https://github.com/TempestAethel/SKOLAR), was created for my internship-related assignments. While it wasn't my favorite project, it marked the beginning of my coding journey!
 
 ### Updates
 I'll be updating my profile with repositories over time, so feel free to check back regularly! For detailed information about my projects, please visit each repository individually.
@@ -50,7 +47,6 @@ Updates will be done at [this link](https://tempestaethel.github.io/TempestAethe
 to be updated 
 
 ---
-
 
 ## Note:
 *I occasionally draw inspiration from various sources online to enhance my projects. I'm always ready to remove any content that may seem like I copied code, although I assure you I never did.*
