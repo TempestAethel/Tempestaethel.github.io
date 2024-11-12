@@ -72,55 +72,122 @@
             transform: scale(1.05); /* Slightly enlarge on hover */
         }
 
+        /* New styles for section toggling */
+        .controls {
+            margin-bottom: 20px;
+        }
+
+        .controls button {
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            background-color: #00bcd4;
+            color: #121212;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin: 5px;
+        }
+
+        .controls button:hover {
+            background-color: #121212;
+            color: #00bcd4;
+        }
+
+        .section {
+            display: none;
+            background: rgba(255, 255, 255, 0.1);
+            border: 3px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            width: 100%; /* Make sections responsive */
+            max-width: 600px; /* Limit max width for larger screens */
+        }
+
         @media (max-width: 600px) {
             .section-title {
                 font-size: 1.5rem;
             }
+
             a {
                 font-size: 0.9rem;
             }
+
             .info-button {
                 font-size: 0.8rem; /* Smaller button text */
             }
+
+            .controls button {
+                font-size: 0.9rem;
+            }
         }
+
     </style>
 </head>
 <body>
 
     <button class="info-button" onclick="window.location.href='info.html'">i</button>
 
-    <div class="section-title">Games</div>
-    <div class="link-container">
-        <a href="https://tempestaethel.github.io/Progress-knight/">Progress Knight</a>
-        <a href="https://tempestaethel.github.io/TicTacToe/">Unbeatable Tic-Tac-Toe</a>
-        <a href="https://tempestaethel.github.io/Minesweeper/">Minesweeper</a>
-        <a href="https://tempestaethel.github.io/Snakes/">Snakes</a>
-        <a href="https://tempestaethel.github.io/Yoyo-Dash/">Yoyo dash</a>
-        <a href="https://tempestaethel.github.io/Othello/">Othello</a>
-        <a href="https://tempestaethel.github.io/Clash-2024/">Clash 2024</a>
+    <!-- Section buttons to switch between content -->
+    <div class="controls">
+        <button onclick="showSection('games')">Games</button>
+        <button onclick="showSection('cognitive-games')">Cognitive Games</button>
+        <button onclick="showSection('miscellaneous')">Miscellaneous</button>
     </div>
 
-     <div class="section-title">Cognitive Games</div>
-    <div class="link-container">
-        <a href="https://tempestaethel.github.io/Golden-Depths/">Golden Depths</a>
-        <a href="https://tempestaethel.github.io/Memory_Match-up/">Flip & Find</a>
-        <a href="https://tempestaethel.github.io/Simon-says/">Simon says</a>
-        <a href="https://tempestaethel.github.io/Memory-Recall/">Memory Recall</a>
-        <a href="https://tempestaethel.github.io/Whack-A-Tile/">Whack A Tile</a>
-        <a href="https://tempestaethel.github.io/Quick-Click/">Quick Click</a>
-        <a href="https://tempestaethel.github.io/Emoji-Hunt/">Emoji Hunt</a>
-        <a href="https://tempestaethel.github.io/Shadow-Maze/">Shadow Maze</a>
-        <a href="https://tempestaethel.github.io/Labyrinth-of-Shadows/">Labyrinth of Shadows</a>
-
-
+    <!-- Section for Games -->
+    <div id="games" class="section">
+        <div class="section-title">Games</div>
+        <div class="link-container">
+            <a href="https://tempestaethel.github.io/Progress-knight/">Progress Knight</a>
+            <a href="https://tempestaethel.github.io/TicTacToe/">Unbeatable Tic-Tac-Toe</a>
+            <a href="https://tempestaethel.github.io/Minesweeper/">Minesweeper</a>
+            <a href="https://tempestaethel.github.io/Snakes/">Snakes</a>
+            <a href="https://tempestaethel.github.io/Yoyo-Dash/">Yoyo Dash</a>
+            <a href="https://tempestaethel.github.io/Othello/">Othello</a>
+            <a href="https://tempestaethel.github.io/Clash-2024/">Clash 2024</a>
+        </div>
     </div>
-    
-    <div class="section-title">Miscellaneous</div>
-    <div class="link-container">
-        <a href="https://tempestaethel.github.io/Webs-of-Wonder/">Webs of Wonders</a>   
-        <a href="https://tempestaethel.github.io/ZenVibes/">ZenVibes</a> 
-        <a href="https://tempestaethel.github.io/Embrace-yourself/">Embrace yourself</a> 
+
+    <!-- Section for Cognitive Games -->
+    <div id="cognitive-games" class="section">
+        <div class="section-title">Cognitive Games</div>
+        <div class="link-container">
+            <a href="https://tempestaethel.github.io/Golden-Depths/">Golden Depths</a>
+            <a href="https://tempestaethel.github.io/Memory_Match-up/">Flip & Find</a>
+            <a href="https://tempestaethel.github.io/Simon-says/">Simon says</a>
+            <a href="https://tempestaethel.github.io/Memory-Recall/">Memory Recall</a>
+            <a href="https://tempestaethel.github.io/Whack-A-Tile/">Whack A Tile</a>
+            <a href="https://tempestaethel.github.io/Quick-Click/">Quick Click</a>
+            <a href="https://tempestaethel.github.io/Emoji-Hunt/">Emoji Hunt</a>
+            <a href="https://tempestaethel.github.io/Shadow-Maze/">Shadow Maze</a>
+            <a href="https://tempestaethel.github.io/Labyrinth-of-Shadows/">Labyrinth of Shadows</a>
+        </div>
     </div>
+
+    <!-- Section for Miscellaneous -->
+    <div id="miscellaneous" class="section">
+        <div class="section-title">Miscellaneous</div>
+        <div class="link-container">
+            <a href="https://tempestaethel.github.io/Webs-of-Wonder/">Webs of Wonders</a>   
+            <a href="https://tempestaethel.github.io/ZenVibes/">ZenVibes</a> 
+            <a href="https://tempestaethel.github.io/Embrace-yourself/">Embrace yourself</a> 
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Show games by default
+        showSection('games');
+    </script>
 
 </body>
 </html>
