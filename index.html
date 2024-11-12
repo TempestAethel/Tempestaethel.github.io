@@ -131,59 +131,53 @@
 
     <button class="info-button" onclick="window.location.href='info.html'">i</button>
 
-<div class="controls">
-    <button onclick="showSection('Games')">Games</button>
-    
-    <button onclick="showSection('miscellaneous')">Miscellaneous</button>
-</div>
-
-<!-- Section for Classic Games -->
-<div id="Games" class="section">
-    <div class="section-title">Classic Games</div>
-    <div class="link-container">
-        <a href="https://tempestaethel.github.io/TicTacToe/">Unbeatable Tic-Tac-Toe</a>
-        <a href="https://tempestaethel.github.io/Minesweeper/">Minesweeper</a>
-        <a href="https://tempestaethel.github.io/Othello/">Othello</a>
-        <a href="https://tempestaethel.github.io/Clash-2024/">Clash 2024</a>
+    <div class="controls">
+        <button onclick="showSection('Games')">Games</button>
+        <button onclick="showSection('miscellaneous')">Miscellaneous</button>
     </div>
 
+    <!-- Section for Classic Games -->
+    <div id="Games" class="section">
+        <div class="section-title">Classic Games</div>
+        <div class="link-container">
+            <a href="https://tempestaethel.github.io/TicTacToe/">Unbeatable Tic-Tac-Toe</a>
+            <a href="https://tempestaethel.github.io/Minesweeper/">Minesweeper</a>
+            <a href="https://tempestaethel.github.io/Othello/">Othello</a>
+            <a href="https://tempestaethel.github.io/Clash-2024/">Clash 2024</a>
+        </div>
 
-<!-- Section for Puzzle Games -->
+        <!-- Section for Puzzle Games -->
+        <div class="section-title">Puzzle Games</div>
+        <div class="link-container">
+            <a href="https://tempestaethel.github.io/Progress-knight/">Progress Knight</a>
+            <a href="https://tempestaethel.github.io/Slice-n-Spin/">Slice-n-Spin</a> <!-- Added the new game here -->
+            <a href="https://tempestaethel.github.io/Golden-Depths/">Golden Depths</a>
+            <a href="https://tempestaethel.github.io/Memory_Match-up/">Flip & Find</a>
+            <a href="https://tempestaethel.github.io/Memory-Recall/">Memory Recall</a>
+            <a href="https://tempestaethel.github.io/Whack-A-Tile/">Whack A Tile</a>
+            <a href="https://tempestaethel.github.io/Shadow-Maze/">Shadow Maze</a>
+            <a href="https://tempestaethel.github.io/Labyrinth-of-Shadows/">Labyrinth of Shadows</a>
+        </div>
 
-    <div class="section-title">Puzzle Games</div>
-    <div class="link-container">
-        <a href="https://tempestaethel.github.io/Progress-knight/">Progress Knight</a>
-        <a href="https://tempestaethel.github.io/Slice-n-Spin/">Slice-n-Spin</a> <!-- Added the new game here -->
-        <a href="https://tempestaethel.github.io/Golden-Depths/">Golden Depths</a>
-        <a href="https://tempestaethel.github.io/Memory_Match-up/">Flip & Find</a>
-        <a href="https://tempestaethel.github.io/Memory-Recall/">Memory Recall</a>
-        <a href="https://tempestaethel.github.io/Whack-A-Tile/">Whack A Tile</a>
-        <a href="https://tempestaethel.github.io/Shadow-Maze/">Shadow Maze</a>
-        <a href="https://tempestaethel.github.io/Labyrinth-of-Shadows/">Labyrinth of Shadows</a>
+        <!-- Section for Action Games -->
+        <div class="section-title">Action Games</div>
+        <div class="link-container">
+            <a href="https://tempestaethel.github.io/Snakes/">Snakes</a>
+            <a href="https://tempestaethel.github.io/Yoyo-Dash/">Yoyo Dash</a>
+            <a href="https://tempestaethel.github.io/Quick-Click/">Quick Click</a>
+            <a href="https://tempestaethel.github.io/Emoji-Hunt/">Emoji Hunt</a>
+        </div>
     </div>
 
-
-<!-- Section for Action Games -->
-
-    <div class="section-title">Action Games</div>
-    <div class="link-container">
-        <a href="https://tempestaethel.github.io/Snakes/">Snakes</a>
-        <a href="https://tempestaethel.github.io/Yoyo-Dash/">Yoyo Dash</a>
-        <a href="https://tempestaethel.github.io/Quick-Click/">Quick Click</a>
-        <a href="https://tempestaethel.github.io/Emoji-Hunt/">Emoji Hunt</a>
+    <!-- Section for Miscellaneous -->
+    <div id="miscellaneous" class="section">
+        <div class="section-title">Miscellaneous</div>
+        <div class="link-container">
+            <a href="https://tempestaethel.github.io/Webs-of-Wonder/">Webs of Wonders</a>   
+            <a href="https://tempestaethel.github.io/ZenVibes/">ZenVibes</a> 
+            <a href="https://tempestaethel.github.io/Embrace-yourself/">Embrace yourself</a> 
+        </div>
     </div>
-</div>
-
-<!-- Section for Miscellaneous -->
-<div id="miscellaneous" class="section">
-    <div class="section-title">Miscellaneous</div>
-    <div class="link-container">
-        <a href="https://tempestaethel.github.io/Webs-of-Wonder/">Webs of Wonders</a>   
-        <a href="https://tempestaethel.github.io/ZenVibes/">ZenVibes</a> 
-        <a href="https://tempestaethel.github.io/Embrace-yourself/">Embrace yourself</a> 
-    </div>
-</div>
-
 
     <script>
         function showSection(sectionId) {
@@ -192,8 +186,8 @@
             document.getElementById(sectionId).style.display = 'block';
         }
 
-        // Show games by default
-        showSection('games');
+        // Show Games section by default
+        showSection('Games');
     </script>
 
 </body>
