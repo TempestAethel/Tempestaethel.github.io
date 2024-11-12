@@ -182,12 +182,49 @@
         </div>
     </div>
 
-    <script>
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(section => section.style.display = 'none');
-            document.getElementById(sectionId).style.display = 'block';
+
+        <script>
+    // Function to show a specific section
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => section.style.display = 'none');
+        document.getElementById(sectionId).style.display = 'block';
+    }
+
+    // List of sections in order
+    const sectionIds = ['Games', 'miscellaneous'];
+
+    // Variable to track the current section
+    let currentSectionIndex = 0;
+
+    // Show the first section (Games) by default
+    showSection(sectionIds[currentSectionIndex]);
+
+    // Function to go to the next section
+    function goToNextSection() {
+        currentSectionIndex = (currentSectionIndex + 1) % sectionIds.length; // Loop to the first section after the last
+        showSection(sectionIds[currentSectionIndex]);
+    }
+
+    // Function to go to the previous section
+    function goToPreviousSection() {
+        currentSectionIndex = (currentSectionIndex - 1 + sectionIds.length) % sectionIds.length; // Loop to the last section before the first
+        showSection(sectionIds[currentSectionIndex]);
+    }
+
+    // Event listener for keydown events to listen for arrow keys and 'A/a', 'D/d'
+    document.addEventListener('keydown', function(event) {
+        // Right arrow key (→) or 'D'/'d' to go to next section
+        if (event.key === 'd' || event.key === 'D' || event.key === 'ArrowRight') {
+            goToNextSection();
+        } 
+        // Left arrow key (←) or 'A'/'a' to go to previous section
+        else if (event.key === 'a' || event.key === 'A' || event.key === 'ArrowLeft') {
+            goToPreviousSection();
         }
+    });
+
+
 
         // Show Games section by default
         showSection('Games');
