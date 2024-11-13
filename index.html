@@ -224,6 +224,38 @@
         }
     });
 
+// Touch listener for mobile swipe functionality
+let startX = 0; // Initial X position for swipe
+let startY = 0; // Initial Y position for swipe
+
+document.addEventListener('touchstart', function(event) {
+    startX = event.touches[0].clientX;
+    startY = event.touches[0].clientY;
+});
+
+document.addEventListener('touchmove', function(event) {
+    if (!startX || !startY) {
+        return;
+    }
+
+    let diffX = event.touches[0].clientX - startX;
+    let diffY = event.touches[0].clientY - startY;
+
+    // Check if swipe is primarily horizontal
+    if (Math.abs(diffX) > Math.abs(diffY)) {
+        if (diffX > 50) {
+            // Swipe right
+            goToPreviousSection();
+        } else if (diffX < -50) {
+            // Swipe left
+            goToNextSection();
+        }
+    }
+
+    // Reset starting positions
+    startX = 0;
+    startY = 0;
+});
 
 
         // Show Games section by default
