@@ -14,32 +14,8 @@ You can check out my anime interests on my [Anime-Planet](https://www.anime-plan
 
 Together, "TempestAethel" can be interpreted as "noble storm," suggesting a powerful and tumultuous character with qualities of honor.
 
-## Main GitHub Page
-You can find links to all my projects on my main GitHub page: [TempestAethel](https://tempestaethel.github.io/TempestAethel/).
-
-## My Projects
-
-### Game Development
-- **[Progress Knight](https://github.com/TempestAethel/Progress-knight)**: A game I enjoyed modding with cheats. Play it [here](https://tempestaethel.github.io/Progress-knight/).
-- **[Unbeatable Tic Tac Toe](https://github.com/TempestAethel/TicTacToe)**: A classic game with a twist. Play it [here](https://tempestaethel.github.io/TicTacToe/).
-- **[Minesweeper](https://github.com/TempestAethel/Minesweeper)**: A puzzle game of logic and strategy. Play it [here](https://tempestaethel.github.io/Minesweeper/).
-- **[Othello](https://github.com/TempestAethel/Othello)**: The classic strategy board game. Play it [here](https://tempestaethel.github.io/Othello/).
-- **[Snake Game](https://github.com/TempestAethel/Snakes)**: A fun take on the classic snake game. Play it [here](https://tempestaethel.github.io/Snakes/).
-- **[Clash 2024](https://github.com/TempestAethel/Clash-2024)**: A tile merging game. Play it [here](https://tempestaethel.github.io/Clash-2024/).
-- **[Yoyo Dash](https://github.com/TempestAethel/Yoyo-Dash)**: An interactive bouncing ball game. Play it [here](https://tempestaethel.github.io/Yoyo-Dash/).
-
-### Miscellaneous Projects
-- **[Web of Wonder](https://github.com/TempestAethel/Webs-of-Wonder)**: A collection of fun web experiments. Explore it [here](https://tempestaethel.github.io/Webs-of-Wonder/).
-- **[Embrace Yourself](https://github.com/TempestAethel/Embrace-yourself)**: A book-like project featuring quotes and poetry. Check it out [here](https://tempestaethel.github.io/Embrace-yourself/).
-- **[ZenVibes](https://github.com/TempestAethel/ZenVibes/tree/main)**: A series of calming projects. Experience it [here](https://tempestaethel.github.io/ZenVibes/).
-
 ## File-Reserve (Previously Skolar)
 - My first repository, **[File-Reserve](https://github.com/TempestAethel/File-Reserve)**, was originally created for my internship-related assignments. Now, it's a place where I upload various non-related text documents—mainly personal notes, drafts, and other files that don't fit with my coding projects but still serve as useful resources. While it may seem unrelated to my other work, it’s a place where I store my text documents for easy access.
-
-### Updates
-I'll be updating my profile with repositories over time, so feel free to check back regularly! For detailed information about my projects, please visit each repository individually.
-
-Updates will be managed on [this link](https://tempestaethel.github.io/TempestAethel/info.html) for easier reference.
 
 ---
 
