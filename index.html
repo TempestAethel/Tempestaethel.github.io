@@ -21,6 +21,7 @@
       align-items: center;
       justify-content: center;
       padding: 20px;
+      position: relative;
     }
 
     h1 {
@@ -38,7 +39,7 @@
       max-width: 600px;
     }
 
-    .menu a, .menu button {
+    .menu a {
       text-decoration: none;
       color: #f5f5f5;
       background: #333;
@@ -46,48 +47,36 @@
       border-radius: 8px;
       text-align: center;
       font-size: 1.1rem;
-      border: none;
       transition: background 0.3s ease, color 0.3s ease;
-      cursor: pointer;
     }
 
-    .menu a:hover, .menu button:hover {
+    .menu a:hover {
       background: #00ffff;
       color: #1e1e1e;
     }
 
-    .info {
-      display: none;
-      margin-top: 20px;
-      background: #2e2e2e;
-      padding: 20px;
-      border-radius: 8px;
-      max-width: 800px;
+    .info-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      background: #333;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: #f5f5f5;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease;
     }
 
-    .info h2 {
-      color: #00ffff;
-      margin-bottom: 10px;
-    }
-
-    .info h3 {
-      color: #00cccc;
-      margin-bottom: 5px;
-    }
-
-    .info p {
-      line-height: 1.6;
-      margin-bottom: 10px;
-    }
-
-    .info a {
-      color: #00ffff;
-      text-decoration: none;
-    }
-
-    .info a:hover {
-      text-decoration: underline;
+    .info-button:hover {
+      background: #00ffff;
+      color: #1e1e1e;
     }
 
     .footer {
@@ -105,47 +94,22 @@
       text-decoration: underline;
     }
   </style>
-  <script>
-    function toggleInfo() {
-      const infoSection = document.querySelector('.info');
-      infoSection.style.display = infoSection.style.display === 'block' ? 'none' : 'block';
-    }
-  </script>
 </head>
 <body>
+  <!-- Info Button -->
+  <a href="info.html" class="info-button" title="About Me">i</a>
+  
+  <!-- Page Title -->
   <h1>TempestAethel's GitHub Menu</h1>
+
+  <!-- GitHub Menu Links -->
   <div class="menu">
     <a href="https://tempestaethel.github.io/GenAI/" target="_blank">GenAI - Games and Codes</a>
     <a href="https://github.com/TempestAethel/File-Reserve" target="_blank">File Reserve (Public)</a>
     <a href="https://github.com/TempestAethel/File-Reserve-Private" target="_blank">File Reserve (Private)</a>
-    <button onclick="toggleInfo()">About Me</button>
   </div>
-  <div class="info">
-    <h2>My GitHub</h2>
-    <p>Welcome to my GitHub profile! I'm a coder based in Bengaluru, Karnataka, India, with a passion for manga, anime, music, and movies. Here, you'll find a collection of my projects, including games and various web experiments.</p>
-    
-    <h3>About Me</h3>
-    <p>I enjoy coding and have experience in languages such as C, C++, and Python. Currently, I primarily work with HTML, CSS, and Java. Most of my projects are built with basic HTML coding that I've learned along the way, often utilizing online resources and tools like ChatGPT.</p>
-    <p><em>I want to be clear: I don’t intend to present myself as a great coder; my work is mainly basic, and anyone interested is welcome to use and improve upon it. Coding has been a passion of mine, and I've invested a lot of time into these projects.</em></p>
-    
-    <h3>Anime Interests</h3>
-    <p>You can check out my anime interests on my <a href="https://www.anime-planet.com/users/TempestAethel" target="_blank">Anime-Planet</a> account. My manga section is not updated, but I read them too.</p>
-    
-    <h3>Meaning Behind My Name</h3>
-    <p><strong>Tempest:</strong> Refers to a violent storm, symbolizing chaos or upheaval.</p>
-    <p><strong>Aethel:</strong> An Old English word meaning "noble" or "honorable."</p>
-    <p>Together, "TempestAethel" can be interpreted as "noble storm," suggesting a powerful and tumultuous character with qualities of honor.</p>
-    
-    <h3>File-Reserve (Previously Skolar)</h3>
-    <p>My first repository, <a href="https://github.com/TempestAethel/File-Reserve" target="_blank">File-Reserve</a>, was originally created for my internship-related assignments. Now, it's a place where I upload various non-related text documents—mainly personal notes, drafts, and other files that don't fit with my coding projects but still serve as useful resources.</p>
-    <p>While it may seem unrelated to my other work, it’s a place where I store my text documents for easy access.</p>
 
-    <hr>
-    <h3>Socials</h3>
-    <p><em>To be updated</em></p>
-    <hr>
-    <p><strong>Note:</strong> I occasionally draw inspiration from various sources online to enhance my projects. I'm always ready to remove any content that may seem like I copied code, although I assure you I never did.</p>
-  </div>
+  <!-- Footer -->
   <div class="footer">
     <p>Made by <a href="https://github.com/TempestAethel" target="_blank">TempestAethel</a></p>
   </div>
