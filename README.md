@@ -1,4 +1,4 @@
-# My GitHub
+# ![TA Logo](TA.png) My GitHub
 
 Welcome to my GitHub profile! I'm a coder based in Bengaluru, Karnataka, India, with a passion for manga, anime, music, and movies. Here, you'll find a collection of my projects, including games and various web experiments.
 
@@ -16,7 +16,7 @@ Together, "TempestAethel" can be interpreted as "noble storm," suggesting a powe
 
 ---
 
-You can also visit my main page here: [TempestAethel](https://tempestaethel.github.io/TempestAethel/), which links to all my other projects and resources.
+You can also visit my main page here: [TempestAethel](https://tempestaethel.github.io/TempestAethel/), which links to other projects and resources.
 
 ---
 
