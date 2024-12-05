@@ -20,7 +20,7 @@ Together, "TempestAethel" can be interpreted as "noble storm," suggesting a powe
 ---
 
 # Socials 
-to be updated 
+To be updated.
 
 ---
 
@@ -28,3 +28,5 @@ to be updated
 *I occasionally draw inspiration from various sources online to enhance my projects. I'm always ready to remove any content that may seem like I copied code, although I assure you I never did.*
 
 ---
+
+You can also visit my main page here: [TempestAethel](https://tempestaethel.github.io/TempestAethel/)
