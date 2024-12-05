@@ -14,6 +14,12 @@ You can check out my anime interests on my [Anime-Planet](https://www.anime-plan
 
 Together, "TempestAethel" can be interpreted as "noble storm," suggesting a powerful and tumultuous character with qualities of honor.
 
+---
+
+You can also visit my main page here: [TempestAethel](https://tempestaethel.github.io/TempestAethel/), which links to all my other projects and resources.
+
+---
+
 ## File-Reserve (Previously Skolar)
 - My first repository, **[File-Reserve](https://github.com/TempestAethel/File-Reserve)**, was originally created for my internship-related assignments. Now, it's a place where I upload various non-related text documents—mainly personal notes, drafts, and other files that don't fit with my coding projects but still serve as useful resources. While it may seem unrelated to my other work, it’s a place where I store my text documents for easy access.
 
@@ -26,7 +32,3 @@ To be updated.
 
 ## Note:
 *I occasionally draw inspiration from various sources online to enhance my projects. I'm always ready to remove any content that may seem like I copied code, although I assure you I never did.*
-
----
-
-You can also visit my main page here: [TempestAethel](https://tempestaethel.github.io/TempestAethel/)
