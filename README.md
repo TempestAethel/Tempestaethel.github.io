@@ -1,4 +1,4 @@
-# ![TA Logo](TA.png) My GitHub
+# <img src="TA.png" alt="TA Logo" width="30" style="vertical-align: middle;"> My GitHub
 
 Welcome to my GitHub profile! I'm a coder based in Bengaluru, Karnataka, India, with a passion for manga, anime, music, and movies. Here, you'll find a collection of my projects, including games and various web experiments.
 
