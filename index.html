@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="TA.png" type="image/png">
+  <title>TempestAethel - GitHub Repositories</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      background-color: #181818;
+      color: #f0f0f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 2.2rem;
+      color: #00c9c9;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 700px;
+    }
+
+    .repo-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #202020;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .repo-container:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .repo-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #00e0e0;
+      text-align: left;
+      flex-grow: 1;
+    }
+
+    .repo-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .repo-button {
+      padding: 8px 15px;
+      font-size: 0.95rem;
+      color: #f0f0f0;
+      background: #333;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .repo-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .repo-button.repo {
+      background: #444;
+    }
+
+    .repo-button.repo:hover {
+      background: #0077cc;
+    }
+
+    .repo-button.pages {
+      background: #444;
+    }
+
+    .repo-button.pages:hover {
+      background: #00cccc;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #aaaaaa;
+    }
+
+    .footer a {
+      color: #00cccc;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>TempestAethel's GitHub Repositories</h1>
+
+  <div class="menu" id="menu"></div>
+
+  <div class="footer">
+    <p>
+      Click <strong>Repo</strong> to view the repository on 
+      <a href="https://github.com" target="_blank">GitHub</a>, or <strong>Pages</strong> to visit the live site on 
+      <a href="https://pages.github.com" target="_blank">GitHub Pages</a>.
+    </p>
+    <p>Made with ❤️ by <a href="https://github.com/TempestAethel">TempestAethel</a> And <a href="https://github.com/Runarok">Runarok</a></p>
+  </div>
+
+  <script>
+    // Fetching repositories from the GitHub API
+    fetch('https://api.github.com/users/TempestAethel/repos')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch repositories from GitHub API.');
+        }
+        return response.json();
+      })
+      .then(data => {
+        const menu = document.getElementById('menu');
+        if (data.length === 0) {
+          menu.innerHTML = '<p>No repositories found.</p>';
+          return;
+        }
+
+        data.forEach(repo => {
+          // Create container for each repository
+          const container = document.createElement('div');
+          container.classList.add('repo-container');
+
+          // Repository name
+          const name = document.createElement('div');
+          name.classList.add('repo-name');
+          name.textContent = repo.name;
+
+          // Buttons container
+          const actions = document.createElement('div');
+          actions.classList.add('repo-actions');
+
+          // GitHub repository button
+          const repoButton = document.createElement('button');
+          repoButton.classList.add('repo-button', 'repo');
+          repoButton.textContent = 'Repo';
+          repoButton.onclick = () => {
+            window.open(repo.html_url, '_blank');
+          };
+
+          // GitHub Pages button
+          const pagesButton = document.createElement('button');
+          pagesButton.classList.add('repo-button', 'pages');
+          pagesButton.textContent = 'Pages';
+          pagesButton.onclick = () => {
+            const pagesUrl = `https://${repo.owner.login}.github.io/${repo.name}/`;
+            window.open(pagesUrl, '_blank');
+          };
+
+          // Append buttons to actions and everything to the container
+          actions.appendChild(repoButton);
+          actions.appendChild(pagesButton);
+          container.appendChild(name);
+          container.appendChild(actions);
+
+          // Append the container to the menu
+          menu.appendChild(container);
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching repositories:', error);
+        document.getElementById('menu').innerHTML = '<p>Failed to load repositories. Please try again later.</p>';
+      });
+  </script>
+</body>
+</html>
