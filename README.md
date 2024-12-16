@@ -1,4 +1,4 @@
-# <img src="TA.png" alt="TA Logo" width="50" style="vertical-align: middle;"> My GitHub  
+<img src="https://raw.githubusercontent.com/TempestAethel/TempestAethel/main/TA.png" alt="TA Logo" width="50" style="vertical-align: middle;"> My GitHub  
 
 Welcome to my GitHub profile! I'm a coder based in Bengaluru, Karnataka, India. This profile is primarily focused on academic-related projects and experiments.  
 
