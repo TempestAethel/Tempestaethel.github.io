@@ -5,6 +5,12 @@ Welcome to my GitHub profile! I'm a coder based in Bengaluru, Karnataka, India. 
 ## About Me  
 I have experience with programming languages such as C, C++, and Python, and I also work with HTML and CSS occasionally. Most of the repositories here are part of my academic learning journey, showcasing basic implementations and ideas.  
 
+## GitHub Stats
+<div align="center">
+  <a href="https://github.com/TempestAethel">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/?username=TempestAethel&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TempestAethel&layout=compact&langs_count=7&theme=dracula" />
+</div>
 
 
 ### Meaning Behind My Name  
