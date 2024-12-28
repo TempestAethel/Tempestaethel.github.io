@@ -2,7 +2,7 @@
   "name": "TempestAethel GitHub Repositories",
   "short_name": "TempestAethel Repos",
   "description": "Browse the GitHub repositories of TempestAethel with quick links to the repositories and their live sites on GitHub Pages.",
-  "start_url": "/",
+  "start_url": "/TempestAethel/",
   "display": "standalone",
   "background_color": "#181818",
   "theme_color": "#00c9c9",
