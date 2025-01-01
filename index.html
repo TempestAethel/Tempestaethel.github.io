@@ -173,15 +173,14 @@
           repoButton.textContent = 'Repo';
           repoButton.addEventListener('mousedown', (e) => {
             if (e.button === 1) {
-              // Middle-click (button 1), open in new tab in the background
-              const newTab = window.open(repo.html_url, '_blank');
-              if (newTab) newTab.blur(); // Ensures focus stays on the current tab
+              // Middle-click, open in new tab
+              window.open(repo.html_url, '_blank');
             } else {
               // Left-click, open in the same tab
               window.location.href = repo.html_url;
             }
           });
-          
+
           // GitHub Pages button
           const pagesButton = document.createElement('button');
           pagesButton.classList.add('repo-button', 'pages');
@@ -189,15 +188,13 @@
           pagesButton.addEventListener('mousedown', (e) => {
             const pagesUrl = `https://${repo.owner.login}.github.io/${repo.name}/`;
             if (e.button === 1) {
-              // Middle-click (button 1), open in new tab in the background
-              const newTab = window.open(pagesUrl, '_blank');
-              if (newTab) newTab.blur(); // Ensures focus stays on the current tab
+              // Middle-click, open in new tab
+              window.open(pagesUrl, '_blank');
             } else {
               // Left-click, open in the same tab
               window.location.href = pagesUrl;
             }
           });
-
 
           // Append buttons to actions and everything to the container
           actions.appendChild(repoButton);
