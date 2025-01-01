@@ -173,9 +173,8 @@
           repoButton.textContent = 'Repo';
           repoButton.addEventListener('mousedown', (e) => {
             if (e.button === 1) {
-              // Middle-click, open in new background tab
-              const newTab = window.open(repo.html_url, '_blank');
-              if (newTab) newTab.blur();  // Blur the newly opened tab to ensure it opens in the background
+              // Middle-click, open in new tab
+              window.open(repo.html_url, '_blank');
             } else {
               // Left-click, open in the same tab
               window.location.href = repo.html_url;
@@ -189,9 +188,8 @@
           pagesButton.addEventListener('mousedown', (e) => {
             const pagesUrl = `https://${repo.owner.login}.github.io/${repo.name}/`;
             if (e.button === 1) {
-              // Middle-click, open in new background tab
-              const newTab = window.open(pagesUrl, '_blank');
-              if (newTab) newTab.blur();  // Blur the newly opened tab to ensure it opens in the background
+              // Middle-click, open in new tab
+              window.open(pagesUrl, '_blank');
             } else {
               // Left-click, open in the same tab
               window.location.href = pagesUrl;
