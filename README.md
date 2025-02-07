@@ -22,6 +22,11 @@ Together, "TempestAethel" can be interpreted as "noble storm," suggesting a powe
 
 ---
 
+### Anime Interests
+You can check out my anime interests on my [Anime-Planet](https://www.anime-planet.com/users/TempestAethel) account. My manga section is not updated, but I read them too.
+
+---
+
 ## Online Main Page  
 For an overview of my repositories, visit my [online main page](https://tempestaethel.github.io/TempestAethel/).
 
