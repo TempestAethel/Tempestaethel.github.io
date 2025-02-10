@@ -4,11 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicon and icon for 'Add to Home Screen' -->
-  <link rel="icon" href="https://raw.githubusercontent.com/TempestAethel/TempestAethel/main/TA.png" type="image/png">
-  <!-- Link to manifest.json (for better compatibility with 'Add to Home Screen') -->
-  <link rel="manifest" href="manifest.json">
-
-
+  <link rel="icon" href="https://raw.githubusercontent.com/TempestAethel/TempestAethel/main/Logo.png" type="image/png">
   <title>TempestAethel - GitHub Repositories</title>
   <style>
     /* General reset */
@@ -121,12 +117,26 @@
     .footer a:hover {
       text-decoration: underline;
     }
+
+    .section-title {
+      font-size: 1.5rem;
+      color: #00e0e0;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <h1>TempestAethel's GitHub Repositories</h1>
 
-  <div class="menu" id="menu"></div>
+  <!-- Active Repositories Section -->
+  <div class="section-title">Active Repositories</div>
+  <div class="menu" id="active-menu"></div>
+
+  <!-- Archived Repositories Section -->
+  <div class="section-title">Archived Repositories</div>
+  <div class="menu" id="archived-menu"></div>
 
   <div class="footer">
     <p>
@@ -137,7 +147,7 @@
     <p>Made with ❤️ by <a href="https://github.com/TempestAethel">TempestAethel</a> And <a href="https://github.com/Runarok">Runarok</a></p>
   </div>
 
-<script>
+  <script>
     // Fetching repositories from the GitHub API
     fetch('https://api.github.com/users/TempestAethel/repos')
       .then(response => {
@@ -147,27 +157,26 @@
         return response.json();
       })
       .then(data => {
-        const menu = document.getElementById('menu');
+        const activeMenu = document.getElementById('active-menu');
+        const archivedMenu = document.getElementById('archived-menu');
+
         if (data.length === 0) {
-          menu.innerHTML = '<p>No repositories found.</p>';
+          activeMenu.innerHTML = '<p>No repositories found.</p>';
+          archivedMenu.innerHTML = '<p>No repositories found.</p>';
           return;
         }
 
         data.forEach(repo => {
-          // Create container for each repository
           const container = document.createElement('div');
           container.classList.add('repo-container');
-
-          // Repository name
+          
           const name = document.createElement('div');
           name.classList.add('repo-name');
           name.textContent = repo.name;
 
-          // Buttons container
           const actions = document.createElement('div');
           actions.classList.add('repo-actions');
 
-          // GitHub repository button
           const repoButton = document.createElement('button');
           repoButton.classList.add('repo-button', 'repo');
           repoButton.textContent = 'Repo';
@@ -181,36 +190,59 @@
             }
           });
 
-          // GitHub Pages button
           const pagesButton = document.createElement('button');
           pagesButton.classList.add('repo-button', 'pages');
           pagesButton.textContent = 'Pages';
           pagesButton.addEventListener('mousedown', (e) => {
-            const pagesUrl = `https://${repo.owner.login}.github.io/${repo.name}/`;
             if (e.button === 1) {
               // Middle-click, open in new tab
-              window.open(pagesUrl, '_blank');
+              window.open(`https://${repo.owner.login}.github.io/${repo.name}/`, '_blank');
             } else {
               // Left-click, open in the same tab
-              window.location.href = pagesUrl;
+              window.location.href = `https://${repo.owner.login}.github.io/${repo.name}/`;
             }
           });
 
-          // Append buttons to actions and everything to the container
           actions.appendChild(repoButton);
           actions.appendChild(pagesButton);
           container.appendChild(name);
           container.appendChild(actions);
 
-          // Append the container to the menu
-          menu.appendChild(container);
+          // Add to the appropriate section
+          if (repo.archived) {
+            archivedMenu.appendChild(container);
+          } else {
+            activeMenu.appendChild(container);
+          }
         });
       })
       .catch(error => {
         console.error('Error fetching repositories:', error);
-        document.getElementById('menu').innerHTML = '<p>Failed to load repositories. Please try again later.</p>';
+        document.getElementById('active-menu').innerHTML = '<p>Failed to load repositories. Please try again later.</p>';
+        document.getElementById('archived-menu').innerHTML = '<p>Failed to load repositories. Please try again later.</p>';
       });
-</script>
 
+    // Open info.html on keypress or zigzag swipe
+    function openInfoPage() {
+      window.location.href = "info.html";
+    }
+
+    // Keydown event for I and Z keys
+    document.addEventListener('keydown', (e) => {
+      if (['i', 'z'].includes(e.key.toLowerCase())) openInfoPage();
+    });
+
+    // Swipe detection variables
+    let touchStart = { x: 0, y: 0 };
+
+    document.addEventListener('touchstart', (e) => {
+      touchStart = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    });
+
+    document.addEventListener('touchend', (e) => {
+      const { x, y } = e.changedTouches[0];
+      if (Math.abs(x - touchStart.x) > 50 && Math.abs(y - touchStart.y) > 50) openInfoPage();
+    });
+  </script>
 </body>
 </html>
